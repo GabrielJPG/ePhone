@@ -1,0 +1,111 @@
+
+    .featured-table{
+      box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
+    }
+
+    .pricing-header{
+      
+    }
+    
+    .pricing-table{
+      display: inline-block;
+      border: 1px solid #C8C8C8;
+      border-radius: 10px;
+      background: white;
+      margin: 30px;
+      transition: all 0.3s ease-in-out;
+      a{
+        text-decoration: none;
+      }
+      li{
+        list-style: none;
+      }
+      
+      &__header{
+        padding: 20px;
+        font-size: 20px;
+        color: #909090 ;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background: #f2f2f2;
+      }
+      &__price{
+        color: rgba(61,114,180,1);
+        padding: 20px;
+        margin: auto;
+        font-size: 40px;
+        font-weight: 500;
+      }
+      &__button{
+        display: block;
+        background: rgba(61,114,180,1);
+        background-image: linear-gradient( 68.1deg,  rgba(61,114,180,1) 5.8%, rgba(82,82,82,1) 98.1% );
+        text-decoration: none;
+        padding: 20px;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        
+        &:before{
+          position: absolute;
+          left: -20%;
+          top: -10%;
+          content: '';
+          width: 60%;
+          height: 220%;
+          transform: rotate(-30deg);
+          background: white;
+          opacity: .3;
+          transition: all 0.3s ease-in-out;
+        }
+        
+         &:after{
+            position: absolute;
+            content: '>';
+            top: 0;
+            right: 0;
+            font-size: 25px;
+            padding: 15px;
+            padding-right: 40px;
+            color: white;
+            opacity: 0;
+           transition: all 0.3s ease-in-out;
+          }
+        
+        &:hover{
+          background: black;
+          color: white;
+        }
+      }
+      &__list{
+        padding: 20px;
+        color: #A0A0A0;
+        li{
+          padding: 15px;
+          border-bottom: 1px solid #C8C8C8 ;
+          
+          &:last-child{
+            border: none;
+          }
+        }
+      }
+      
+      &:hover{
+        box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.36);
+        
+        .pricing-table__button{
+          padding-left: 0;
+          padding-right: 35px;
+         &:before{
+            top: -80%;
+            transform: rotate(0deg);
+            width: 100%;
+          }
+          &:after{
+            opacity: 1;
+            padding-right: 15px;
+          }
+        }
+      }
+    }

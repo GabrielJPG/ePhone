@@ -1,0 +1,20 @@
+@media only screen and (max-width: 990px) {
+  .container-fluid {
+    overflow: hidden;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .features {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pricing-table {
+    width: 90%;
+    color: red;
+  }
+}
